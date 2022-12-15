@@ -1,0 +1,48 @@
+.reviews {
+    background: url(../img/decor/strawberry.svg) right 20px top 38px no-repeat;
+
+
+
+    &::before {
+        content: '';
+        background: url(../img/decor/2.svg);
+        position: absolute;
+        bottom: 0;
+        transform: translateY(40%);
+        z-index: 1;
+        height: 235px;
+        width: 75px;
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @include phones {
+            height: 235px;
+            width: 75px;
+
+
+        }
+    }
+
+    &::after {
+        content: '';
+        background: url(../img/decor/review-rw.svg);
+        position: absolute;
+        bottom: 0;
+        transform: translateY(40%);
+        z-index: 2;
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 193px;
+        width: 135px;
+
+
+        @include phones {
+            height: 176px;
+            width: 122px;
+            transform: translate(-20px);
+
+        }
+    }
+}

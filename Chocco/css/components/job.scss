@@ -1,0 +1,32 @@
+.job {
+    background: #F8FAF9;
+    position: relative;
+
+    &::before {
+        content: url('../img/decor/job-decor1.svg');
+        position: absolute;
+        right: 100px;
+
+        top: 80px;
+
+
+    }
+
+    &::after {
+        content: url('../img/decor/job-decor.svg');
+        position: absolute;
+        left: 100px;
+
+        bottom: 68px;
+
+
+    }
+
+    &__video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}

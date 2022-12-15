@@ -1,0 +1,161 @@
+.carte {
+    background: url(../img/decor/carte-decor.png);
+    background-size: cover;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: flex;
+        background: rgba(0, 0, 0, .4);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+
+    }
+
+    &__title {
+        position: absolute;
+        left: 85px;
+        top: 109px;
+
+
+    }
+
+    &__list,
+    &__item {
+        height: 100%;
+        display: flex;
+
+    }
+
+    &__item {
+        &:hover {
+            .carte__wrap {
+                width: 524px;
+
+                @include phones {
+
+                    width: 390px;
+
+
+
+                }
+            }
+
+        }
+    }
+
+    &__caption {
+
+        color: #FFFFFF;
+
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58px;
+        writing-mode: vertical-rl;
+        position: relative;
+        transform: rotate(180deg);
+
+        @include phones {
+
+            font-size: 40px;
+            line-height: 48px;
+
+
+
+        }
+
+    }
+
+    &__inner {
+        width: 100%;
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    &__button {
+        display: flex;
+        width: 102px;
+        height: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+        padding-bottom: 40px;
+
+        @include phones {
+
+            width: 90px;
+
+
+
+        }
+
+        &::before {
+            top: 0;
+            left: 0;
+            content: '';
+            display: flex;
+            background: rgba(0, 0, 0, .6);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        &_1 {
+            background-image: url(../img/decor/carte-decor1.png);
+
+
+
+        }
+
+        &_2 {
+            background-image: url(../img/decor/carte-decor2.png);
+
+        }
+
+        &_3 {
+            background-image: url(../img/decor/carte-decor3.png);
+        }
+    }
+
+    &__content {
+        width: 524px;
+        background: rgba(51, 53, 55, 0.6);
+        backdrop-filter: blur(10px);
+        padding: 38px 30px 90px;
+        height: 100%;
+
+        @include phones {
+
+            width: 390px;
+
+            padding: 39px 35px 39px 38px;
+
+        }
+
+    }
+
+    &__desc {
+        color: #FFFFFF;
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+
+
+    }
+
+    &__wrap {
+        height: 100%;
+        overflow: hidden;
+        width: 0;
+        transition: .5s;
+    }
+}

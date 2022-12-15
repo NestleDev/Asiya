@@ -1,0 +1,43 @@
+.section {
+    height: 100vh;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &__title_white {
+        color: #FFFFFF;
+
+    }
+}
+
+.section__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 32px;
+
+    @include phones {
+        font-size: 35px;
+
+
+    }
+}
+
+.section__title_green {
+    color: #365A49;
+
+    @include tablets {
+        max-width: initial;
+
+
+    }
+
+
+
+}

@@ -1,0 +1,159 @@
+.form {
+    display: flex;
+    column-gap: 27px;
+
+    @include tablets {
+        flex-direction: column;
+
+
+    }
+
+
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        row-gap: 12px;
+
+        @include tablets {
+            row-gap: initial;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        column-gap: 15px;
+        margin-bottom: 12px;
+
+
+
+    }
+
+    &__input {
+        width: 100%;
+        padding: 12px 18px 12px 20px;
+        border: 3px solid transparent;
+        border-radius: 4px;
+        outline: none;
+
+        &:focus {
+            border-color: #DEE2BD;
+        }
+
+        &_texterea {
+            height: 152px;
+            resize: none;
+
+            @include phones {
+                height: 82px;
+
+
+            }
+
+        }
+
+        @include phones {
+            padding: 8px 10px;
+
+
+        }
+    }
+
+    &__label {
+        flex: 1;
+
+        @include phones {
+            justify-content: center;
+        }
+
+    }
+
+    &__text {
+
+        font-size: 18px;
+        color: #497870;
+
+
+
+
+
+    }
+
+    &__input-fake {
+        background: #FFFFFF;
+        display: block;
+        height: 25px;
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__input-fake_radio {
+        border-radius: 50%;
+
+        &::before {
+            content: '';
+            display: none;
+            height: 13px;
+            width: 13px;
+            background: #365A49;
+            border-radius: 50%;
+
+        }
+    }
+
+    &__label_contrl {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+
+
+
+
+        & input {
+
+            position: absolute;
+            left: -999999px;
+        }
+
+        & input:checked+.form__input-fake::before {
+            display: block;
+        }
+
+        .form__text {
+            margin-left: 10px;
+        }
+
+
+    }
+
+    &__input-fake_checkbox {
+        border-radius: 4px;
+
+        &::before {
+            content: url(../img/icons/Vector.svg);
+            display: none;
+
+        }
+    }
+
+    &__row_mb_25 {
+
+        @include tablets {
+            margin-bottom: 25px;
+        }
+
+
+    }
+
+    &__row_align-center {
+        @include tablets {
+            justify-content: center;
+        }
+    }
+
+}

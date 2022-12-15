@@ -1,0 +1,36 @@
+button {
+    border: none;
+    background: none;
+}
+
+.btn {
+
+
+    font-size: 16px;
+    padding: 21px 41px;
+    border-radius: 100px;
+    display: inline-flex;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
+
+}
+
+.btn_theme_white {
+
+    background: #fff;
+    color: $darkGreen;
+}
+
+.btn_theme_green {
+    background: #497870;
+    color: #F8FAF9;
+}
+
+.btn_theme_transparent {
+
+    font-size: 18px;
+    font-weight: 400;
+    color: #497870;
+    text-transform: capitalize;
+}

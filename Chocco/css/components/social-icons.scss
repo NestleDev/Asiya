@@ -1,0 +1,19 @@
+.social-icons {
+    &__list {
+        display: flex;
+        column-gap: 14px;
+        align-items: center;
+    }
+
+    &__icon {
+        height: 20px;
+        width: 20px;
+        fill: #B3B3B3;
+        transition: .2s;
+
+        &:hover {
+            fill: #000;
+        }
+    }
+
+}

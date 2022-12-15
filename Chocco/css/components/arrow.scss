@@ -1,0 +1,15 @@
+.arrow {
+    position: absolute;
+    top: 50%;
+    height: 27px;
+    width: 13.5px;
+
+    @include tablets {
+        top: 30%;
+    }
+
+    @include phones {
+        top: 25%;
+    }
+
+}

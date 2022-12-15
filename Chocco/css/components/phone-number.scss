@@ -1,0 +1,36 @@
+.phone-number {
+    font-size: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.phone-number__icon-elem {
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+}
+
+.phone-number_green {
+    color: #497870;
+    font-size: 21px;
+}
+
+.phone-number.header__phone-number {
+    @include tablets {
+        display: none;
+
+    }
+
+
+
+}
+
+.phone-number__text {
+    @include phones {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+}

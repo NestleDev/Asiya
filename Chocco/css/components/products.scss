@@ -1,0 +1,81 @@
+.products {
+    background: #F8FAF9;
+    position: relative;
+
+    &::before {
+        content: '';
+        background: url(../img/decor/3.svg);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translateY(50%);
+        height: 453px;
+        width: 196px;
+
+        display: block;
+        background-size: contain;
+
+
+        @include phones {
+            height: 351px;
+            width: 151px;
+
+        }
+
+
+
+
+    }
+
+    &::after {
+        content: '';
+        background: url(../img/decor/blueberry.svg);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translateY(50%);
+        width: 135px;
+        height: 112px;
+        display: block;
+        background-size: contain;
+
+        @include phones {
+            width: 104px;
+            height: 85px;
+        }
+
+    }
+
+    &__container {
+        max-width: 980px;
+    }
+
+    &__next {
+        right: 0;
+
+        @include tablets {
+            right: 15%;
+
+
+        }
+
+        @include phones {
+            right: 13px;
+
+        }
+    }
+
+    &__prev {
+        left: 0;
+
+        @include tablets {
+            left: 15%;
+
+        }
+
+        @include phones {
+            left: 13px;
+
+        }
+    }
+}

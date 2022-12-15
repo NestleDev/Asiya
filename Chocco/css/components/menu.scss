@@ -1,0 +1,19 @@
+.menu {
+  @include tablets {
+    display: none;
+  }
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.menu__link {
+  text-decoration: none;
+
+}
+
+.menu__item {
+  margin-right: 15px;
+}

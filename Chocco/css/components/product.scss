@@ -1,0 +1,106 @@
+.product {
+    padding: 0 20px;
+
+    &__item {
+        display: flex;
+
+        @include tablets {
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43px;
+        text-transform: uppercase;
+        margin-bottom: 23px;
+
+        @include tablets {
+            font-size: 30px;
+            margin-bottom: 14px;
+            text-align: center;
+
+        }
+
+        @include phones {
+            font-size: 30px;
+            max-width: 380px;
+        }
+    }
+
+    &__desc {
+        font-size: 18px;
+        font-weight: 400;
+        max-width: 368px;
+        margin-bottom: 25px;
+
+        @include tablets {
+            max-width: 530px;
+            text-align: center;
+
+        }
+
+    }
+
+    &__parameters {
+        display: flex;
+        column-gap: 45px;
+        margin-bottom: 25px;
+
+
+    }
+
+    &__parameter-value {
+        font-size: 18px;
+        font-weight: bold;
+
+    }
+
+    &__price {
+        font-size: 60px;
+        font-weight: 300;
+        line-height: 60px;
+    }
+
+    &__row {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    &__content {
+        margin-left: 45px;
+
+        @include tablets {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 0;
+
+        }
+
+    }
+
+    &__compound {
+        margin-bottom: 23px;
+    }
+
+    &__img {
+
+        @include tablets {
+            max-width: 430px;
+
+
+        }
+
+        @include phones {
+            max-width: 100%;
+
+
+        }
+    }
+}

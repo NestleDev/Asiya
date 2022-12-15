@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&family=Open+Sans:wght@400;700&display=swap');
+
+$containerWidth: 940px;
+$baseFontSize: 18px;
+$blue: #61c4d9;
+$darkGreen: #0b4d3c;
+
+body {
+    margin: 0;
+}
+
+@import 'media.scss';
+
+@import 'layout.scss';
+@import "./components/logo.scss";
+@import "./components/section.scss";
+@import "./components/hero.scss";
+@import "./components/header.scss";
+@import "./components/menu.scss";
+@import "./components/phone-number.scss";
+@import "./components/button.scss";
+@import "./components/feature.scss";
+@import "./components/features.scss";
+@import "./components/headline.scss";
+@import "./components/benefit.scss";
+@import "./components/benefits.scss";
+@import "./components/review.scss";
+@import "./components/reviews.scss";
+@import "./components/product.scss";
+@import "./components/products.scss";
+@import "./components/compound.scss";
+@import "./components/team.scss";
+@import "./components/carte.scss";
+@import "./components/form.scss";
+@import "./components/job.scss";
+@import "./components/map.scss";
+@import "./components/social-icons.scss";
+@import "./components/footer.scss";
+@import "./components/order.scss";
+@import "./components/arrow.scss";

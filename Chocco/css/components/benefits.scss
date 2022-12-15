@@ -1,0 +1,46 @@
+.benefits__list {
+    display: flex;
+    margin-left: -52px;
+
+    @include phones {
+        flex-direction: column;
+
+    }
+
+}
+
+.benefits_section {
+    background: url(../img/decor/bnf.svg) left no-repeat;
+    position: relative;
+
+    @include phones {
+        background: none;
+    }
+
+    &::before {
+        content: url('../img/decor/raspberry.svg');
+        position: absolute;
+        bottom: 0;
+        transform: translateY(40%);
+        z-index: 1;
+
+        @include phones {
+            display: none;
+        }
+
+    }
+
+
+}
+
+.benefits__item {
+    flex: 1;
+    margin-left: 52px;
+
+    &:last-child .benefit__img-wraper::before {
+        display: none;
+    }
+
+
+
+}

@@ -1,0 +1,66 @@
+.order {
+    position: relative;
+    background: url(../img/decor/form-decor1.svg) bottom 69px left 50px no-repeat, url(..//img/decor/order.png);
+
+    @include tablets {
+
+        background: url(..//img/decor/order.png);
+
+    }
+
+
+    &::before {
+        content: '';
+        background: url(../img/decor/form-decor.svg);
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateY(-50%);
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;
+        height: 264px;
+        width: 196px;
+
+        @include phones {
+            height: 147px;
+            width: 109px;
+
+
+        }
+
+
+
+    }
+
+    &::after {
+        content: url('../img/decor/form-decor2.svg');
+        position: absolute;
+
+        right: 10px;
+        bottom: 58px;
+
+        @include phones {
+            display: none;
+
+
+        }
+
+        @include tablets {
+            display: none;
+
+
+        }
+
+    }
+
+    &__container {
+        @include tablets {
+            max-width: 475px;
+
+
+        }
+    }
+
+}
